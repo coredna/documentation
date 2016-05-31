@@ -1,6 +1,37 @@
 @import 'theme.scss';
 @import 'badge_only.scss';
 
+/* 
+ * pre styles
+ *
+ */
+
+div[class^='highlight'] pre {
+	background:#272822;
+	color:#eee;
+}
+
+.na {
+	color:#fff;
+}
+.nf {
+	color:#f62671;
+}
+.s1 {
+	color:#fd971f;
+}
+.m, .nv {
+	color:#e6db74;
+}
+div[class^='highlight'] td.code, .linenos {
+	margin:0;
+	padding:0;
+	border:0;
+}
+.linenodiv pre {
+	border-right:1px solid #4d4d4d;
+}
+
 .wy-nav-side {
 	position: absolute;
 }
@@ -38,6 +69,12 @@
 *, *:before, *:after {
 	transition:all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
+
+.rst-content tt.literal, .rst-content tt.literal, .rst-content code.literal {
+	color:#333;
+}
+
+
 
 header {
 	background:#343131;

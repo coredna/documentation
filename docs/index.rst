@@ -8,18 +8,18 @@ Core dna Documentation
 .. toctree::
    :maxdepth: 3
    :glob:
-   :caption: For Developers
+   :caption: Developers
 
-   for-developers/*
+   developers/*
 
-.. for-editors:
+.. editors:
 
 .. toctree::
    :maxdepth: 3
    :glob:
-   :caption: For Editors
+   :caption: Editors
 
-   for-editors/*
+   editors/*
 
 .. release-notes:
 

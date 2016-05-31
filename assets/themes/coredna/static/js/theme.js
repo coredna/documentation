@@ -178,3 +178,15 @@ var Proposal = {
   }
 };
 Proposal.initialize();
+
+$('.wy-menu-vertical .caption').each(function() {
+    if ($(this).next().hasClass('current')) {
+        if ($(this).text() == 'Developers') {
+            $('header .toctree-l1:nth-child(1)').addClass('current');
+        } else if ($(this).text() == 'Editors') {
+            $('header .toctree-l1:nth-child(2)').addClass('current');
+        } else if ($(this).text() == 'Release Notes') {
+            $('header .toctree-l1:nth-child(3)').addClass('current');
+        }
+    }
+});
