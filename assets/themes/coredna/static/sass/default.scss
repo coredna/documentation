@@ -1,0 +1,67 @@
+@import 'theme.scss';
+@import 'badge_only.scss';
+
+.wy-nav-side {
+	position: absolute;
+}
+
+.wy-menu-vertical li.on a, .wy-menu-vertical li.current>a {
+	background:#ff0037;
+	color:#fff;
+	border:0;
+}
+
+.wy-menu-vertical li.on a:hover, .wy-menu-vertical li.current>a:hover {
+	background:darken(#ff0037,10%);
+}
+
+.icon-home {
+	display:none !important;
+}
+
+.wy-side-nav-search {
+	background:none;
+}
+
+.wy-nav-content-wrap, .wy-nav-content {
+	background:#fff;
+}
+
+.wy-nav-content {
+	max-width: inherit;
+}
+
+header {
+	background:#343131;
+	&:after {
+		content: '';
+		clear:both;
+		display: block;
+	}
+	ul {
+		li {
+			float:left;
+			&.current a {
+				background:#ff0037;
+			}
+		}
+		a {
+			color:#fff;
+			display:block;
+			padding:30px 24px;
+			&:visited {
+				color:#eee;
+			}
+		}
+	}
+	.logo {
+		img {
+			width:150px;
+		}
+		width:300px;
+		text-align: center;
+		padding:30px 25px 7px 25px;
+		display: block;
+		float:left;
+	}
+}
