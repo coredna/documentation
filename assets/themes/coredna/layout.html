@@ -71,18 +71,17 @@
 <body class="wy-body-for-nav" role="document">
 
 <header>
-  <a href="/" class="logo"><img src="../_static/images/logo.svg" alt="Core dna" /></a>
-  <div data-spy="affix" role="navigation" aria-label="main navigation">
+  <a href="/" class="logo"><img src="{{ pathto('/_static/images/logo.svg', 1) }}" alt="Core dna" /></a>
+  <!-- <div data-spy="affix" role="navigation" aria-label="main navigation">
     {% block menuTop %}
       {% set toctree = toctree(maxdepth=1, collapse=theme_collapse_navigation, includehidden=false) %}
       {% if toctree %}
           {{ toctree }}
       {% else %}
-          <!-- Local TOC -->
           <div class="local-toc">{{ toc }}</div>
       {% endif %}
     {% endblock %}
-  </div>
+  </div> -->
 
 </header>
 
