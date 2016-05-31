@@ -154,3 +154,27 @@ if (typeof(window) != 'undefined') {
 }
 
 },{"jquery":"jquery"}]},{},["sphinx-rtd-theme"]);
+
+
+var Proposal = {
+
+  initialize: function() {
+    this.elements();
+    this.events();
+  },
+
+  elements: function() {
+    this.element = $('header');
+  },
+
+  events: function() {
+    $(window).scroll(function() {
+      if ($(window).scrollTop() > Proposal.element.outerHeight()) {
+        $('body').addClass('sticky--active');
+      } else {
+        $('body').removeClass('sticky--active');
+      };
+    });
+  }
+};
+Proposal.initialize();
