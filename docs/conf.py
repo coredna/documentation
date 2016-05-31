@@ -339,6 +339,4 @@ source_parsers = {
 
 source_suffix = ['.rst', '.md']
 
-html_theme = "coredna"
-
 html_style = "css/default.css"

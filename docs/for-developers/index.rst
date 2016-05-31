@@ -32,7 +32,7 @@ Global components
    components/*
 
 Templating
-**********
+***************
 
 .. templating:
 
@@ -43,7 +43,7 @@ Templating
    templating/*
 
 Resources
-*********
+***************
 
 .. resources:
 

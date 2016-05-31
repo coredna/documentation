@@ -1,12 +1,12 @@
 Core dna Documentation
-====================================
+**********************
 
 `Core dna <https://www.coredna.com>`_ is a multi-tenant SaaS platform which provides integrated applications, enterprise security, and object-based content management all from one login.
 
 .. for-developers:
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 3
    :glob:
    :caption: For Developers
 
@@ -15,7 +15,7 @@ Core dna Documentation
 .. for-editors:
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 3
    :glob:
    :caption: For Editors
 
@@ -24,7 +24,7 @@ Core dna Documentation
 .. release-notes:
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 3
    :glob:
    :caption: Release Notes
 
