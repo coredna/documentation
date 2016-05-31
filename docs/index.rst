@@ -6,7 +6,7 @@ Core dna Documentation
 .. for-developers:
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :glob:
    :caption: Developers
 
@@ -15,7 +15,7 @@ Core dna Documentation
 .. editors:
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :glob:
    :caption: Editors
 
@@ -24,7 +24,7 @@ Core dna Documentation
 .. release-notes:
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :glob:
    :caption: Release Notes
 
