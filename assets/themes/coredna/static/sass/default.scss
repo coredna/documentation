@@ -161,7 +161,17 @@ header {
 				padding-left:10px;
 			}
 		}
-		
+		.breadcrumbs__github {
+			background:#343131;
+			position: absolute;
+			right:0;
+			a {
+				padding:30px 15px 30px 15px;
+				&:after {
+					display: none;
+				}
+			}
+		}
 		
 	}
 	.logo {
@@ -226,4 +236,8 @@ header {
 	header {
 		display:none;
 	}
+}
+
+footer p {
+	font-size:11px;
 }
