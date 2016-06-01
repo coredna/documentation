@@ -1,5 +1,5 @@
 @import 'theme.scss';
-
+@import 'badge_only.scss';
 
 /* 
  * pre styles
@@ -74,7 +74,12 @@ div[class^='highlight'] td.code, .linenos {
 	color:#333;
 }
 
-
+.rst-versions.rst-badge {
+	width:300px;
+	bottom:0;
+	right:auto;
+	left:0;
+}
 
 header {
 	background:#343131;
