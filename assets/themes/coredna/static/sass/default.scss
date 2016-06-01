@@ -9,6 +9,18 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'liberation_monobold';
+    src: url('../fonts/LiberationMono-Bold-webfont.eot');
+    src: url('../fonts/LiberationMono-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/LiberationMono-Bold-webfont.woff') format('woff'),
+         url('../fonts/LiberationMono-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/LiberationMono-Bold-webfont.svg#liberation_monobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 @import 'theme.scss';
 @import 'badge_only.scss';
 
@@ -90,7 +102,7 @@ div[class^='highlight'] td.code, .linenos {
 }
 
 code, .rst-content tt, .rst-content code {
-	font-family:'liberation_monoregular',menlo,Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace
+	font-family:'liberation_monobold',menlo,Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace
 }
 
 .rst-versions.rst-badge {
