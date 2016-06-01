@@ -1,2 +1,2 @@
-Known issues
+The platform
 ************

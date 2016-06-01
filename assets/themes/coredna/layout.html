@@ -71,9 +71,10 @@
 <body class="wy-body-for-nav" role="document">
 
 <header>
-  <a href="{{ pathto('index') }}" class="logo"><img src="{{ pathto('/en/latest/_static/images/logo.svg', 1) }}" alt="Core dna" /></a>
+  <a href="{{ pathto('index') }}" class="logo"><img src="{{ pathto('_static/' + logo, 1) }}" alt="Core dna" /></a>
   <div data-spy="affix" role="navigation" aria-label="main navigation">
     <ul>
+      <li class="toctree-l1"><a href="{{ pathto('index.html', 1) }}">General</a></li>
       <li class="toctree-l1"><a href="{{ pathto('developers/index.html', 1) }}">Developers</a></li>
       <li class="toctree-l1"><a href="{{ pathto('editors/index.html', 1) }}">Editors</a></li>
       <li class="toctree-l1"><a href="{{ pathto('release-notes/archive.html', 1) }}">Release Notes</a></li>
@@ -121,7 +122,7 @@
 
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           {% block menu %}
-            {% set toctree = toctree(maxdepth=4, collapse=theme_collapse_navigation, includehidden=True) %}
+            {% set toctree = toctree(maxdepth=2, collapse=theme_collapse_navigation, includehidden=True) %}
             {% if toctree %}
                 {{ toctree }}
             {% else %}

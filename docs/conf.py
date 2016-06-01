@@ -125,7 +125,9 @@ html_theme = 'coredna'
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-# html_theme_options = {}
+html_theme_options = {
+    'sticky_navigation': True
+}
 
 # Add any paths that contain custom themes here, relative to this directory.
 html_theme_path = ['../assets/themes']
@@ -133,7 +135,7 @@ html_theme_path = ['../assets/themes']
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
 #
-# html_title = u'Core dna v1.0.0'
+html_title = u'Core dna'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #
@@ -142,13 +144,13 @@ html_theme_path = ['../assets/themes']
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
 #
-# html_logo = None
+html_logo = '../assets/static/images/logo.svg'
 
 # The name of an image file (relative to this directory) to use as a favicon of
 # the docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
 # pixels large.
 #
-# html_favicon = None
+html_favicon = '../assets/static/images/favicon.ico'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -199,7 +201,7 @@ html_static_path = ['../assets/static']
 
 # If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
 #
-# html_show_sphinx = True
+html_show_sphinx = False
 
 # If true, "(C) Copyright ..." is shown in the HTML footer. Default is True.
 #
@@ -330,13 +332,3 @@ texinfo_documents = [
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #
 # texinfo_no_detailmenu = False
-
-from recommonmark.parser import CommonMarkParser
-
-source_parsers = {
-    '.md': CommonMarkParser,
-}
-
-source_suffix = ['.rst', '.md']
-
-html_style = "css/default.css"

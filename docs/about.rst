@@ -1,2 +1,2 @@
-Base templates
+About Core dna
 **************
