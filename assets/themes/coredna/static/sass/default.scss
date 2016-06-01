@@ -35,7 +35,12 @@ div[class^='highlight'] td.code pre {
 div[class^='highlight'] pre {
 	background:#272822;
 	color:#eee;
-	font-family:'liberation_monoregular',menlo,Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace
+	font-family:'liberation_monoregular',menlo,Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
+	font-size:85%;
+	span {
+		position: relative;
+		left:-13px;
+	}
 }
 
 .na {
