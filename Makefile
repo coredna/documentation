@@ -14,6 +14,13 @@ ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) doc
 # the i18n builder cannot share the environment and doctrees with the others
 I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) docs
 
+# Sass stuff
+SASSBUILD  = sass
+SASSTHEME  = coredna
+SASSINPUT  = assets/themes/$(SASSTHEME)/static/sass/default.scss
+SASSOUTPUT = assets/themes/$(SASSTHEME)/static/css/default.css
+SASSARGS   = --style compressed --sourcemap=none
+
 .PHONY: help
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
@@ -43,6 +50,7 @@ help:
 	@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
 	@echo "  coverage   to run coverage check of the documentation (if enabled)"
 	@echo "  dummy      to check syntax errors of document sources"
+	@echo "  sass       to compile sass"
 
 .PHONY: clean
 clean:
@@ -223,3 +231,9 @@ dummy:
 	$(SPHINXBUILD) -b dummy $(ALLSPHINXOPTS) $(BUILDDIR)/dummy
 	@echo
 	@echo "Build finished. Dummy builder generates no files."
+
+.PHONY: sass
+sass:
+	$(SASSBUILD) $(SASSINPUT):$(SASSOUTPUT) $(SASSARGS)
+	@echo
+	@echo "Build finished. The css file is located at $(SASSOUTPUT)."
