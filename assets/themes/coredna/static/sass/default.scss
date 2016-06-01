@@ -81,8 +81,13 @@ div[class^='highlight'] td.code, .linenos {
 	left:0;
 }
 
+.wy-nav-top {
+	background:#343131;
+}
+
 header {
 	background:#343131;
+	box-shadow: 0 0 6px rgba(0,0,0,0.5);
 	&:after {
 		content: '';
 		clear:both;
