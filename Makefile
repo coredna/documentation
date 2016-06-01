@@ -51,6 +51,7 @@ help:
 	@echo "  coverage   to run coverage check of the documentation (if enabled)"
 	@echo "  dummy      to check syntax errors of document sources"
 	@echo "  sass       to compile sass"
+	@echo "  everything to compile sass, remove existing build and compile html"
 
 .PHONY: clean
 clean:
@@ -237,3 +238,11 @@ sass:
 	$(SASSBUILD) $(SASSINPUT):$(SASSOUTPUT) $(SASSARGS)
 	@echo
 	@echo "Build finished. The css file is located at $(SASSOUTPUT)."
+
+.PHONY: everything
+everything:
+	make sass
+	make clean
+	make html
+	@echo
+	@echo "Yeah, it's all done."
