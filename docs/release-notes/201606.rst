@@ -1,0 +1,13 @@
+June 2016
+*********
+
+========== ========= ================== ==============
+Date       Task      Module(s) affected Change(s) made
+========== ========= ================== ==============
+2016-06-02 TECH-1562                    Fixed incorrect language file used with ckeditor slickcarousel
+2016-06-01 TECH-1561 prodcatalogueorder Fixed all emails sent not using sender email and sender name in configuration
+2016-06-01 TECH-1540 pubuser_export     Fixed all modifier not correctly getting all pubusers regardless of change date
+2016-06-01 TECH-1560 feedback           Fixed regex not extracting multiline comments correctly from plaintext store in database
+2016-06-01 TECH-1535 blogs              Added search blogs by pubuser_id
+2016-06-01 TECH-1531 prodcataloguecart  Fixed special pricing not being used with product variants in the new cart
+========== ========= ================== ==============
