@@ -70,25 +70,13 @@
 
 <body class="wy-body-for-nav" role="document">
 
-<header>
-  <a href="{{ pathto('index') }}" class="logo"><img src="{{ pathto('_static/' + logo, 1) }}" alt="Core dna" /></a>
-  <div data-spy="affix" role="navigation" aria-label="main navigation">
-    <!-- <ul>
-      <li class="toctree-l1"><a href="{{ pathto('index.html', 1) }}">General</a></li>
-      <li class="toctree-l1"><a href="{{ pathto('developers/getting-started.html', 1) }}">Developers</a></li>
-      <li class="toctree-l1"><a href="{{ pathto('editors/getting-started.html', 1) }}">Editors</a></li>
-      <li class="toctree-l1"><a href="{{ pathto('release-notes/archive.html', 1) }}">Release Notes</a></li>
-    </ul> -->
-    {% include "breadcrumbs.html" %}
-  </div>
-</header>
-
   {% block extrabody %} {% endblock %}
   <div class="wy-grid-for-nav">
 
     {# SIDE NAV, TOGGLES ON MOBILE #}
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
+        <a href="{{ pathto(master_doc) }}" class="logo"><img src="{{ pathto('_static/' + logo, 1) }}" alt="Core dna" /></a>
         <div class="wy-side-nav-search">
           {% block sidebartitle %}
 
@@ -135,11 +123,13 @@
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
+      <div id="breadcrumbs">
+          {% include "breadcrumbs.html" %}
+      </div>
       {# MOBILE NAV, TRIGGLES SIDE NAV ON TOGGLE #}
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="{{ pathto(master_doc) }}">{{ project }}</a>
+        <a href="{{ pathto(master_doc) }}" class="logo"><img src="{{ pathto('_static/' + logo, 1) }}" alt="Core dna" /></a>
       </nav>
 
 

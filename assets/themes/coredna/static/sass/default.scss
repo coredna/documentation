@@ -24,7 +24,7 @@
 @import 'theme.scss';
 @import 'badge_only.scss';
 
-/* 
+/*
  * pre styles
  *
  */
@@ -120,11 +120,7 @@ code, .rst-content tt, .rst-content code {
 	left:0;
 }
 
-.wy-nav-top {
-	background:#343131;
-}
-
-header {
+div#breadcrumbs {
 	background:#343131;
 	box-shadow: 0 0 6px rgba(0,0,0,0.5);
 	&:after {
@@ -133,7 +129,7 @@ header {
 		display: block;
 	}
 	.breadcrumbs {
-		margin-left:353px;
+		margin-left:15px;
 		li {
 			&.toctree-l1 {
 				display: block;
@@ -145,7 +141,7 @@ header {
 			& > span {
 				color:#fff;
 				display:block;
-				padding:30px 10px 30px 0px;
+				padding:15px 10px 15px 0px;
 				&:hover {
 					color:#fff;
 				}
@@ -154,7 +150,7 @@ header {
 		a {
 			color:#9b9b9b;
 			display:block;
-			padding:30px 10px 30px 0px;
+			padding:15px 10px 15px 0px;
 			&:visited {
 				color:#9b9b9b;
 			}
@@ -171,28 +167,51 @@ header {
 			position: absolute;
 			right:0;
 			a {
-				padding:30px 15px 30px 15px;
+				padding:15px;
 				&:after {
 					display: none;
 				}
 			}
 		}
-		
-	}
-	.logo {
-		img {
-			width:150px;
-		}
-		width:300px;
-		text-align: center;
-		padding:23px 25px 14px 25px;
-		display: block;
-		float:left;
+
 	}
 }
 
 .search {
 	margin:0 8px;
+}
+
+.wy-side-scroll {
+	width:100%;
+}
+.wy-side-scroll, .wy-nav-top {
+	.logo {
+		img {
+			width:60%;
+		}
+		text-align: center;
+		padding:23px 25px;
+		display: block;
+	}
+}
+
+.wy-nav-top {
+	background:#343131;
+	line-height: inherit;
+	padding: 4px 15px;
+
+    .logo {
+		padding: 1px 0;
+
+		img {
+			background: transparent;
+			border-radius: 0;
+			height: 39px;
+			padding: 0;
+			margin: 0;
+			width: auto;
+		}
+	}
 }
 
 .wy-side-nav-search  {
@@ -211,7 +230,6 @@ header {
 				left:0%;
 				width:100%;
 			}
-			padding-left:12px;
 		}
 	}
 	.search__line {
@@ -237,8 +255,32 @@ header {
 	}
 }
 
+@media screen and (max-width: 1024px) {
+	.wy-nav-side {
+		width: 225px;
+	}
+	.wy-nav-content-wrap {
+		margin-left: 225px;
+	}
+	div#breadcrumbs {
+		.breadcrumbs {
+			.toctree-path > a {
+				display: none;
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 768px) {
-	header {
+	.wy-nav-content-wrap {
+		margin-left: 0;
+	}
+	.wy-side-scroll {
+		.logo {
+			display: none;
+		}
+	}
+	div#breadcrumbs {
 		display:none;
 	}
 }
