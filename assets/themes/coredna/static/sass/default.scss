@@ -132,13 +132,13 @@ code, .rst-content tt, .rst-content code {
 	font-family:'liberation_monobold',menlo,Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace
 }
 
-.rst-versions.rst-badge {
-	> .rst-current-version > .fa-book {
+.rst-versions.rst-badge.shift-up {
+	.rst-current-version .fa-book {
 		line-height: 30px;
 	}
 
-	.rst-versions a {
-	color: #27ae60;
+	a {
+		color: #27ae60;
 	}
 }
 
