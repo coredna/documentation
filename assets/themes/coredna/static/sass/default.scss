@@ -90,6 +90,10 @@ div[class^='highlight'] td.code, .linenos {
 			li > a {
 				background: #ff0037;
 			}
+
+			li.current > a {
+				background: darken(#ff0037, 10%);
+			}
 		}
 	}
 }
