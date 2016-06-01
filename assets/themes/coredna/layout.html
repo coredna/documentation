@@ -73,12 +73,13 @@
 <header>
   <a href="{{ pathto('index') }}" class="logo"><img src="{{ pathto('_static/' + logo, 1) }}" alt="Core dna" /></a>
   <div data-spy="affix" role="navigation" aria-label="main navigation">
-    <ul>
-      <li class="toctree-l1"><!-- <a href="{{ pathto('index.html', 1) }}">General</a> --></li>
+    <!-- <ul>
+      <li class="toctree-l1"><a href="{{ pathto('index.html', 1) }}">General</a></li>
       <li class="toctree-l1"><a href="{{ pathto('developers/getting-started.html', 1) }}">Developers</a></li>
       <li class="toctree-l1"><a href="{{ pathto('editors/getting-started.html', 1) }}">Editors</a></li>
       <li class="toctree-l1"><a href="{{ pathto('release-notes/archive.html', 1) }}">Release Notes</a></li>
-    </ul>
+    </ul> -->
+    {% include "breadcrumbs.html" %}
   </div>
 </header>
 
@@ -146,7 +147,6 @@
       {# PAGE CONTENT #}
       <div class="wy-nav-content">
         <div class="rst-content">
-          {% include "breadcrumbs.html" %}
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             {% block body %}{% endblock %}

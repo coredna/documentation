@@ -22,7 +22,7 @@ var Sticky = {
 };
 Sticky.initialize();
 
-$('.wy-menu-vertical .caption').each(function() {
+/*$('.wy-menu-vertical .caption').each(function() {
     if ($(this).next().hasClass('current')) {
         if ($(this).text() == 'General') {
             $('header .toctree-l1:nth-child(1)').addClass('current');
@@ -38,4 +38,4 @@ $('.wy-menu-vertical .caption').each(function() {
             console.log($(this).text());
         }
     }
-});
+});*/
