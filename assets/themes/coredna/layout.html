@@ -66,6 +66,8 @@
   {# Keep modernizr in head - http://modernizr.com/docs/#installing #}
   <script src="{{ pathto('_static/js/modernizr.min.js', 1) }}"></script>
 
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -182,7 +184,7 @@
   {% if not READTHEDOCS %}
     <script type="text/javascript" src="{{ pathto('_static/js/theme.js', 1) }}"></script>
   {% endif %}
-    <script type="text/javascript" src="{{ pathto('_static/js/all.js', 1) }}"></script>
+    
 
   {# STICKY NAVIGATION #}
   {% if theme_sticky_navigation %}

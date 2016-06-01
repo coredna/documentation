@@ -71,7 +71,14 @@ div[class^='highlight'] td.code, .linenos {
 }
 
 .rst-content tt.literal, .rst-content tt.literal, .rst-content code.literal {
+	background:rgba(0,0,0,0.04);
 	color:#333;
+	box-shadow:0 0 6px rgba(0,0,0,0.05);
+	font-weight:bold;
+}
+
+code, .rst-content tt, .rst-content code {
+	font-family:menlo,'Open Sans',Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace
 }
 
 .rst-versions.rst-badge {
