@@ -26,12 +26,16 @@ $('.wy-menu-vertical .caption').each(function() {
     if ($(this).next().hasClass('current')) {
         if ($(this).text() == 'General') {
             $('header .toctree-l1:nth-child(1)').addClass('current');
+            console.log($(this).text());
         } else if ($(this).text() == 'For Developers') {
             $('header .toctree-l1:nth-child(2)').addClass('current');
+            console.log($(this).text());
         } else if ($(this).text() == 'For Editors') {
             $('header .toctree-l1:nth-child(3)').addClass('current');
+            console.log($(this).text());
         } else if ($(this).text() == 'Release Notes') {
             $('header .toctree-l1:nth-child(4)').addClass('current');
+            console.log($(this).text());
         }
     }
 });

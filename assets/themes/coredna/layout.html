@@ -66,8 +66,6 @@
   {# Keep modernizr in head - http://modernizr.com/docs/#installing #}
   <script src="{{ pathto('_static/js/modernizr.min.js', 1) }}"></script>
 
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -76,9 +74,9 @@
   <a href="{{ pathto('index') }}" class="logo"><img src="{{ pathto('_static/' + logo, 1) }}" alt="Core dna" /></a>
   <div data-spy="affix" role="navigation" aria-label="main navigation">
     <ul>
-      <li class="toctree-l1"><a href="{{ pathto('index.html', 1) }}">General</a></li>
-      <li class="toctree-l1"><a href="{{ pathto('developers/index.html', 1) }}">Developers</a></li>
-      <li class="toctree-l1"><a href="{{ pathto('editors/index.html', 1) }}">Editors</a></li>
+      <li class="toctree-l1"><!-- <a href="{{ pathto('index.html', 1) }}">General</a> --></li>
+      <li class="toctree-l1"><a href="{{ pathto('developers/getting-started.html', 1) }}">Developers</a></li>
+      <li class="toctree-l1"><a href="{{ pathto('editors/getting-started.html', 1) }}">Editors</a></li>
       <li class="toctree-l1"><a href="{{ pathto('release-notes/archive.html', 1) }}">Release Notes</a></li>
     </ul>
   </div>
@@ -184,7 +182,7 @@
   {% if not READTHEDOCS %}
     <script type="text/javascript" src="{{ pathto('_static/js/theme.js', 1) }}"></script>
   {% endif %}
-    
+    <script type="text/javascript" src="{{ pathto('_static/js/all.js', 1) }}"></script>
 
   {# STICKY NAVIGATION #}
   {% if theme_sticky_navigation %}
