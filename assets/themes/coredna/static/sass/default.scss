@@ -75,24 +75,32 @@ div[class^='highlight'] td.code, .linenos {
 
 	& ul.current > li {
 		&.current a {
-			background: #ff0037;
+			background: darken(#343131, 5%);
 			border: 0;
 		  	color: #fff;
-		  	font-weight: bold;
+		  	font-weight: normal;
 		  	-webkit-font-smoothing: auto;
+
+		  	&:hover {
+				background: lighten(#343131, 5%);
+			}
 		}
 
 		&.current a.current {
-			background: darken(#ff0037, 10%);
+			background: #ee1d3e;
 		}
 
 		&.current > ul {
 			li > a {
-				background: #ff0037;
+				background: darken(#343131, 5%);
+
+				&:hover {
+					background: lighten(#343131, 5%);
+				}
 			}
 
 			li.current > a {
-				background: darken(#ff0037, 10%);
+				background: #ee1d3e;
 			}
 		}
 	}
