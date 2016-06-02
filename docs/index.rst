@@ -22,7 +22,7 @@ Core dna Documentation
    developers/getting-started
    developers/*
 
-.. editors:
+.. for-editors:
 
 .. toctree::
    :maxdepth: 1
@@ -31,12 +31,3 @@ Core dna Documentation
 
    editors/getting-started
    editors/*
-
-.. release-notes:
-
-.. toctree::
-   :maxdepth: 1
-   :glob:
-   :caption: Release Notes
-
-   release-notes/*
